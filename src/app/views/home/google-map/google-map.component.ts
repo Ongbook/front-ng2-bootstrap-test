@@ -1,4 +1,5 @@
 import {Component, OnInit, OnDestroy, AfterContentInit} from '@angular/core';
+
 @Component({
     selector: 'google-map',
     templateUrl: 'google-map.component.html',

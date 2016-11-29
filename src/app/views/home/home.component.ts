@@ -1,5 +1,7 @@
 import {Component, OnInit, OnDestroy, AfterContentInit} from '@angular/core';
 import {ApiService} from '../../core/services/api.service';
+import 'animate.css/animate.min.css';
+
 @Component({
     selector: 'home',
     templateUrl: 'home.component.html',
@@ -8,13 +10,9 @@ import {ApiService} from '../../core/services/api.service';
 
 export class HomeComponent implements OnInit, OnDestroy, AfterContentInit {
 
-    constructor(private api:ApiService) {
+    constructor(private api: ApiService) {}
 
-    }
 
-    public mapMarkers: Array<any> = [
-        {}
-    ]; 
 
     ngOnInit() {
         
@@ -27,6 +25,7 @@ export class HomeComponent implements OnInit, OnDestroy, AfterContentInit {
     ngOnDestroy() {
 
     }
+
 
     
 }

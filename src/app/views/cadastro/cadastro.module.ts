@@ -1,7 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
-import { routing } from './about.routing';
-import { AboutComponent } from './about.component';
+import { routing } from './cadastro.routing';
+import { CadastroComponent } from './cadastro.component';
 
 @NgModule({
   imports:      [
@@ -10,10 +10,10 @@ import { AboutComponent } from './about.component';
   ],
   providers: [],
   declarations: [
-      AboutComponent
+      CadastroComponent
   ],
   exports: []
 })
-export class AboutModule {
+export class CadastroModule {
 
 }

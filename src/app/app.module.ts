@@ -6,6 +6,21 @@ import {routing} from './app.routing';
 import {CoreModule} from './core/core.module';
 import {AppLayoutModule} from './views/app-layout/app-layout.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+
+export const firebaseConfig = {
+    apiKey: 'AIzaSyDS4-ddlFHcGEp66eO2gsjWS0CvL-3YyIU',
+    authDomain: 'ongbook-9c3ec.firebaseapp.com',
+    databaseURL: 'https://ongbook-9c3ec.firebaseio.com',
+    storageBucket: 'ongbook-9c3ec.appspot.com',
+    messagingSenderId: '496575609949'
+};
+
+const myFirebaseAuthConfig = {
+    provider: AuthProviders.Password,
+    method: AuthMethods.Password
+}
+
 
 @NgModule({
     imports: [
@@ -14,6 +29,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
         CoreModule,
         AppLayoutModule,
         NgbModule.forRoot(),
+        AngularFireModule.initializeApp(firebaseConfig, myFirebaseAuthConfig),
     ],
     declarations: [
         AppComponent,

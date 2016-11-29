@@ -1,10 +1,10 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 @Component({
-    selector: 'about',
-    templateUrl: 'about.component.html',
-    styleUrls: ['about.component.scss'],
+    selector: 'cadastro',
+    templateUrl: 'cadastro.component.html',
+    styleUrls: ['cadastro.component.scss'],
 })
-export class AboutComponent implements OnInit, OnDestroy {
+export class CadastroComponent implements OnInit, OnDestroy {
 
     constructor() {
 
