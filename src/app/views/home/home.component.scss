@@ -47,3 +47,20 @@ p,h1 {
 .padding50{
     padding: 50px;
 }
+
+.contributors{
+    background-color: #f19c14;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contributors h2{
+    color:white;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px black;
+}
+.contributors p{
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}

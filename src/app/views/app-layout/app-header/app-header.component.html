@@ -22,15 +22,25 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>
-                        <ul id="login-dp" class="dropdown-menu">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                            <div *ngIf="!authState">
+                                <b>Entrar</b> <span class="caret"></span>
+                            </div>
+                            <div *ngIf="authState">
+                                <span>Olá </span>
+                                <strong>{{ authState.auth.displayName}}</strong>
+                                <span class="caret"></span>
+                            </div>
+                        </a>
+
+                        <ul id="login-dp" class="dropdown-menu" *ngIf="!authState">
                             <li>
                                 <div class="row">
                                     <div class="col-md-12">
                                         Entrar utilizando
                                         <div class="social-buttons">
-                                            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            <a (click)="fblogin()" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a (click)="printuserinfo()" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                         </div>
                                         ou
                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
@@ -42,7 +52,7 @@
                                                 <label class="sr-only" for="password">Senha</label>
                                                 <input type="password" class="form-control" id="password" placeholder="Senha" required>
                                                 <div class="help-block text-right">
-                                                    <a href="">Esqueceu sua senha ?</a>
+                                                    <a (click)="logout()">Esqueceu sua senha ?</a>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -51,16 +61,74 @@
                                         </form>
                                     </div>
                                     <div class="bottom text-center">
-                                        Não tem uma conta ? <a href="#"><b>Crie uma!</b></a>
+                                        Não tem uma conta ? <a href="javascript:void(0)" (click)="showregister()"><b>Crie uma!</b></a>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                        <ul class="dropdown-menu" *ngIf="authState">
+                            <li>
+                                <div class="navbar-login">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <p class="text-center">
+                                                <img src="{{ authState.auth.photoURL}}" alt="img"/>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p class="text-left"><strong>{{ authState.auth.displayName}}</strong></p>
+                                            <p class="text-left small">{{ authState.auth.email}}</p>
+                                            <p class="text-left">
+                                                <a href="#" class="btn btn-primary btn-block btn-sm">Minha Conta</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="divider navbar-login-session-bg"></li>
+                            <li><a href="#">Painel <span class="fa fa-dashboard pull-right"></span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Entidades <span class="fa fa-home pull-right"></span></a></li>
+                            <li class="divider"></li>
+                            <li><a (click)="logout()">Sair <span class="fa fa-sign-out pull-right"></span></a></li>
+                        </ul>
                     </li>
                 </ul>
-
-
             </div><!--/.nav-collapse -->
         </div>
     </nav>
 </header>
+
+<template #register let-c="close" let-d="dismiss">
+    <form #f="ngForm" (ngSubmit)="cadastrar(f.value, f.valid)" id="cadastro" class="form">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Cadastrar-se no Ongbook</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="name" class="control-label">Nome:</label>
+                <input type="text" class="form-control" name="name" id="name" required [ngModel]="user.name">
+            </div>
+            <div class="form-group">
+                <label for="email" class="control-label">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" required [ngModel]="user.email">
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-label">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password" required [ngModel]="user.password" #password="ngModel">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword" class="control-label">Repetir Senha:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" [ngModel]="user.confirmPassword" 
+                    required validateEqual="password" #confirmPassword="ngModel">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </form>
+</template>
