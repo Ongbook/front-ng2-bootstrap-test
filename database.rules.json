@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "pre_cadastro": {
+      ".read": "auth != true",
+      ".write": "auth != true"
+    }
+  }
+}
