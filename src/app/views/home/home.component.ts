@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, OnDestroy, AfterContentInit {
     }
 
     ngAfterContentInit() {
-        
+
     }
 
     ngOnDestroy() {

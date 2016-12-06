@@ -76,8 +76,27 @@ app-header{
 }
 
 .navbar-brand img{
-    margin-top: -10px;
-    width: 50px;
+    margin-top: -14px;
+    height: 62px;
+}
+
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
 }
 
 #login-dp{
