@@ -12,12 +12,12 @@ function createMap(objId, lat, long) {
 }
 
 function createMarkers(map) {
-    $.getJSON("ongs.json", function (data) {
+    $.getJSON("http://ongbookprototipo.hol.es/api/enderecos", function (data) {
         $.each(data, function (key, val) {
             var marker = new google.maps.Marker({
-                position: val.localizacao,
+                position: new google.maps.LatLng(val.lat, val.lng),
                 map: map,
-                title: val.nome
+                title: val.descEnd
             });
 
             var infowindow = new google.maps.InfoWindow({

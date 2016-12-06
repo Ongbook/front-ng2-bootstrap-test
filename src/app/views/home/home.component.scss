@@ -1,7 +1,6 @@
 p,h1 {
     color: white;
 }
-
 .overMap{
     position: absolute; 
     top:0px; 
@@ -22,14 +21,12 @@ p,h1 {
     z-index: 20;
     display: none;
 }
-
 .overMap h1{
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 5em;
     font-weight: 600;
 }
-
 .overMap h2{
     font-size: 2em;
     max-width: 600px;
@@ -39,7 +36,6 @@ p,h1 {
 .fgWhite{
     color:white;
 }
-
 .color3{
     background-color: #2d4052;
 }
@@ -47,14 +43,14 @@ p,h1 {
 .padding50{
     padding: 50px;
 }
-
 .contributors{
-    background-color: #f19c14;
-    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-color: rgba(241,156,20,0.8);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQAKvH/D9Z4TxQRxRhU+MYAEYB8RmROaABADVjA7dZF1Q+AAAAABJRU5ErkJggg==);
     padding-top: 20px;
     padding-bottom: 20px;
+    min-height: 450px;
 }
+
 .contributors h2{
     color:white;
     font-weight: 600;
@@ -63,4 +59,7 @@ p,h1 {
 .contributors p{
     color: white;
     text-shadow: 2px 2px 10px black;
+}
+.parallax-window {
+    background: transparent;
 }
