@@ -4,16 +4,15 @@ import { routing } from './cadastro.routing';
 import { CadastroComponent } from './cadastro.component';
 
 @NgModule({
-  imports:      [
-  	CommonModule,
-  	routing
-  ],
+  imports: [ CommonModule, routing ],
+
   providers: [],
-  declarations: [
-      CadastroComponent
-  ],
+
+  declarations: [CadastroComponent],
+
   exports: []
 })
+
 export class CadastroModule {
 
 }

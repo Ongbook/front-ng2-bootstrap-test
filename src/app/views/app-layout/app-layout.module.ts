@@ -5,18 +5,22 @@ import {AppFooterComponent} from './app-footer/app-footer.component';
 import {RouterModule} from '@angular/router';
 import {AppLayoutComponent} from './app-layout.component';
 import { FormsModule } from '@angular/forms';
+import { EqualValidator} from './equal-validator.directive';
+import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
     imports: [
         CommonModule,
         RouterModule,
+        BrowserModule,
         FormsModule
     ],
     providers: [],
     declarations: [
         AppLayoutComponent,
         AppHeaderComponent,
-        AppFooterComponent
+        AppFooterComponent,
+        EqualValidator
     ],
     exports: [
         AppLayoutComponent

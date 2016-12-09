@@ -100,7 +100,7 @@
 </header>
 
 <template #register let-c="close" let-d="dismiss">
-    <form #f="ngForm" (ngSubmit)="cadastrar(f.value, f.valid)" id="cadastro" class="form">
+    <form #f="ngForm" (ngSubmit)="cadastrar(f.value, f.valid)" class="form">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
                 <span aria-hidden="true">&times;</span>
@@ -110,7 +110,7 @@
         <div class="modal-body">
             <div class="form-group">
                 <label for="name" class="control-label">Nome:</label>
-                <input type="text" class="form-control" name="name" id="name" required [ngModel]="user.name">
+                <input type="text" class="form-control" name="name" id="name" required [ngModel]="user.name" minlength="5">
             </div>
             <div class="form-group">
                 <label for="email" class="control-label">Email:</label>
@@ -118,7 +118,7 @@
             </div>
             <div class="form-group">
                 <label for="password" class="control-label">Senha:</label>
-                <input type="password" class="form-control" id="password" name="password" required [ngModel]="user.password" #password="ngModel">
+                <input type="password" class="form-control" id="password" name="password" required [ngModel]="user.password" #password="ngModel" minlength="8" reverse="true">
             </div>
             <div class="form-group">
                 <label for="confirmPassword" class="control-label">Repetir Senha:</label>

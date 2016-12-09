@@ -19,10 +19,10 @@ export class BootstrapModalComponent implements OnInit {
 
     openModal() {
         this.modalService.open(this.exampleModal).result.then((result) => {
-            //closed button pressed
+            // closed button pressed
             console.log(`Closed with: ${result}`);
         }, (reason) => {
-            //escape button pressed
+            // escape button pressed
             console.log(`Modal Dismissed`);
         });
     }

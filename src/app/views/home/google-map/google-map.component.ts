@@ -27,5 +27,5 @@ export class GoogleMapComponent implements OnInit, OnDestroy, AfterContentInit {
 
 }
 
-//declaração da função escrita em javascript
+// declaração da função escrita em javascript
 declare function createMap(id: any, lat: any, lng: any): void;
