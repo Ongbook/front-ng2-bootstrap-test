@@ -5,16 +5,13 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
     styleUrls: ['app-footer.component.scss'],
 })
 export class AppFooterComponent implements OnInit, OnDestroy {
-    private url = 'https://github.com/preboot/angular2-webpack';
     constructor() {
 
     }
 
     ngOnInit() {
-
     }
 
     ngOnDestroy() {
-
     }
 }

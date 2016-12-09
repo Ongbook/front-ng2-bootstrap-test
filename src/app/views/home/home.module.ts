@@ -5,17 +5,14 @@ import { GoogleMapComponent} from './google-map/google-map.component';
 import { HomeComponent } from './home.component';
 
 @NgModule({
-  imports: [
-      CommonModule,
-  	  routing
-  ],
+  imports: [ CommonModule, routing ],
+
   providers: [],
-  declarations: [
-      HomeComponent,
-      GoogleMapComponent
-  ],
+
+  declarations: [HomeComponent, GoogleMapComponent],
+
   exports: []
 })
+
 export class HomeModule {
-    
 }

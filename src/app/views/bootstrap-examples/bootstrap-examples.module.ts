@@ -6,7 +6,8 @@ import {BootstrapAlertComponent} from './bootstrap-alert/bootstrap-alert.compone
 import {BootstrapDatePickerComponent} from './bootstrap-date-picker/bootstrap-date-picker.component';
 import {BootstrapDropdownComponent} from './bootstrap-dropdown/bootstrap-dropdown.component';
 import {BootstrapTabsComponent} from './bootstrap-tabs/bootstrap-tabs.component';
-import {NgbAlertModule, NgbDatepickerModule, NgbDropdownModule, NgbModalModule, NgbTabsetModule, NgbTypeaheadModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbAlertModule, NgbDatepickerModule, NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModalModule, NgbTabsetModule, NgbTypeaheadModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
 import {BootstrapModalComponent} from './bootstrap-modal/bootstrap-modal.component';
 
