@@ -1,4 +1,17 @@
 ﻿window.addEventListener("load", function () {
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            afterRender: function () {
+                $('#mapContainer').height($(window).height());
+                $('#map').height($(window).height());
+                $('#overMap').fadeIn();
+                resizeGoogleMap();
+            }
+        });
+    });
+
+    
+
     //github
     var orgMembers = GhOrgMembers({
         container: "#org-members"
@@ -17,7 +30,4 @@
         document.querySelector(".description").style.display = "block";
     };
 
-    //parallax
-    $('.parallax-window').parallax({ imageSrc: 'img/nat.jpg' });
-    console.log('parallax adicionado');
 });

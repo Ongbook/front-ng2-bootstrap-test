@@ -46,9 +46,13 @@ function mapGetStarted() {
         }, 500, function () {
             $("#overMap").remove();
             $("#mapTip").fadeIn();
-            google.maps.event.trigger(map, "resize");
+            resizeGoogleMap();
         });
     });
+}
+
+function resizeGoogleMap() {
+    google.maps.event.trigger(map, "resize");
 }
 
 function showPosition(position) {
