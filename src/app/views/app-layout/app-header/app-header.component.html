@@ -8,16 +8,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" [routerLink]="['']">
+                <a class="navbar-brand" data-menuanchor="mapa" href="#mapa">
                     <img src="img/logo.png" alt="logo ongbook" />
                 </a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a [routerLink]="['about']">Parceiros?</a></li>
-                    <li><a href="#about">Atua em alguma ONG?</a></li>
+                    <li data-menuanchor="queremos"><a href="#queremos">Atua em alguma ONG?</a></li>
+                    <li data-menuanchor="parceiros"><a href="#parceiros">Parceiros?</a></li>                    
                     <li><a href="#">O que é</a></li>
-                    <li><a href="#about">Apoie</a></li>
+                    <li data-menuanchor="parceiros"><a href="#parceiros">Apoie</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">

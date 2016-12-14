@@ -1,29 +1,30 @@
 ﻿<div id="fullpage">
-    <div class="section" id="mapContainer">
+    <div class="section" id="section0" >
+        <div id="mapContainer">
+            <google-map></google-map>
 
-        <google-map></google-map>
+            <div class="mapTip" id="mapTip" onclick="$(this).hide()">
+                <img src="img/map_tip.png" alt="tip" />
+            </div>
 
-        <div class="mapTip" id="mapTip" onclick="$(this).hide()">
-            <img src="img/map_tip.png" alt="tip" />
-        </div>
+            <div class="overMap" id="overMap">
+                <div class="container">
+                    <h1 class="animated fadeInUp">
+                        Entidades Sociais a sua volta, você conhece?
+                    </h1>
 
-        <div class="overMap" id="overMap">
-            <div class="container">
-                <h1 class="animated fadeInUp">
-                    Entidades Sociais a sua volta, você conhece?
-                </h1>
+                    <h2 class="animated fadeInUp" style="-webkit-animation-delay: 0.5s;">
+                        Um local para Solidários conhecerem as necessidades de Entidades que trabalham para surprir problemas sociais.
+                    </h2>
 
-                <h2 class="animated fadeInUp" style="-webkit-animation-delay: 0.5s;">
-                    Um local para Solidários conhecerem as necessidades de Entidades que trabalham para surprir problemas sociais.
-                </h2>
-
-                <button onclick="mapGetStarted()" style="-webkit-animation-delay: 1s;" class="btn btn-default animated fadeInUp">
-                    Conheça Agora
-                </button>
+                    <button onclick="mapGetStarted()" style="-webkit-animation-delay: 1s;" class="btn btn-default animated fadeInUp">
+                        Conheça Agora
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section color3 fgWhite padding50">
+    <div class="section color3 fgWhite padding50" id="section1">
         <div class="container">
             <h1 class="text-center">Queremos e fazemos</h1>
             <p class="text-center">Catálogo de Entidades Sociais e suas necessidade, daquelas com as causas mais nobres do planeta.</p>
@@ -53,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="parallax-window section" id="#parallax" data-parallax="scroll" data-image-src="/img/nat.jpg">
+    <div class="section" id="section2">
         <div class="contributors">
             <div class="container">
                 <h2>Nossos Colaboradores</h2>

@@ -1,6 +1,7 @@
 ﻿window.addEventListener("load", function () {
     $(document).ready(function () {
         $('#fullpage').fullpage({
+            anchors: ['mapa', 'queremos', 'parceiros'],
             afterRender: function () {
                 $('#mapContainer').height($(window).height());
                 $('#map').height($(window).height());
