@@ -61,9 +61,13 @@ p,h1 {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQAKvH/D9Z4TxQRxRhU+MYAEYB8RmROaABADVjA7dZF1Q+AAAAABJRU5ErkJggg==);
     height:100%;    
 }
+
 .contributors .container{
     padding-top:100px;
     padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 450px;
 }
 
 .contributors h2{
