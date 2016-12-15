@@ -1,68 +1,71 @@
-﻿<div id="mapContainer" style="height:600px; position:relative;">
-    
-    <google-map></google-map>
+﻿<div id="fullpage">
+    <div class="section" id="section0" >
+        <div id="mapContainer">
+            <google-map></google-map>
 
-    <div class="mapTip" id="mapTip" onclick="$(this).hide()">
-        <img src="img/map_tip.png" alt="tip" />
-    </div>
-
-    <div class="overMap" id="overMap">
-        <div class="container">
-            <h1 class="animated fadeInUp">
-                Entidades Sociais a sua volta, você conhece?
-            </h1>
-
-            <h2 class="animated fadeInUp" style="-webkit-animation-delay: 0.5s;">
-                Um local para Solidários conhecerem as necessidades de Entidades que trabalham para surprir problemas sociais.
-            </h2>
-
-            <button onclick="mapGetStarted()" style="-webkit-animation-delay: 1s;" class="btn btn-default animated fadeInUp">
-                Conheça Agora
-            </button>
-        </div>
-    </div>
-</div>
-<div class="color3 fgWhite padding50">
-    <div class="container">
-        <h1 class="text-center">Queremos e fazemos</h1>
-        <p class="text-center">Catálogo de Entidades Sociais e suas necessidade, daquelas com as causas mais nobres do planeta.</p>
-        <p class="text-center">Todas engajadas em prol dos Objetivos de Desenvolvimento do Milênio</p>
-
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Metas</h3>
-                <b>Para as Entidades Sociais</b>
-                <ul>
-                    <li>Dar visibilidade aos seus projetos sociais.</li>
-                    <li>Manter a população informada de suas atividade diárias.</li>
-                    <li>
-                        Gerir suas necessidades (postar, manter e dar feedback dos resultados).
-                        <ul>
-                            <li>Necessidade de um determinado material.</li>
-                            <li>Necessidade de dinheiro para comprar o material.</li>
-                            <li>Necessidade de trabalho voluntário.</li>
-                        </ul>
-                    </li>
-
-                </ul>
+            <div class="mapTip" id="mapTip" onclick="$(this).hide()">
+                <img src="img/map_tip.png" alt="tip" />
             </div>
-            <div class="col-md-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/doHnLiAzQ5M" frameborder="0" allowfullscreen></iframe>
+
+            <div class="overMap" id="overMap">
+                <div class="container">
+                    <h1 class="animated fadeInUp">
+                        Entidades Sociais a sua volta, você conhece?
+                    </h1>
+
+                    <h2 class="animated fadeInUp" style="-webkit-animation-delay: 0.5s;">
+                        Um local para Solidários conhecerem as necessidades de Entidades que trabalham para surprir problemas sociais.
+                    </h2>
+
+                    <button onclick="mapGetStarted()" style="-webkit-animation-delay: 1s;" class="btn btn-default animated fadeInUp">
+                        Conheça Agora
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="parallax-window" id="#parallax" data-parallax="scroll" data-image-src="/img/nat.jpg">
-    <div class="contributors">
+    <div class="section color3 fgWhite padding50" id="section1">
         <div class="container">
-            <h2>Nossos Colaboradores</h2>
-            <p>Pessoas de espírito solidário juntos na nossa luta!</p>
-            <div id="org-members">
-                <div class="loader">
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
+            <h1 class="text-center">Queremos e fazemos</h1>
+            <p class="text-center">Catálogo de Entidades Sociais e suas necessidade, daquelas com as causas mais nobres do planeta.</p>
+            <p class="text-center">Todas engajadas em prol dos Objetivos de Desenvolvimento do Milênio</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Metas</h3>
+                    <b>Para as Entidades Sociais</b>
+                    <ul>
+                        <li>Dar visibilidade aos seus projetos sociais.</li>
+                        <li>Manter a população informada de suas atividade diárias.</li>
+                        <li>
+                            Gerir suas necessidades (postar, manter e dar feedback dos resultados).
+                            <ul>
+                                <li>Necessidade de um determinado material.</li>
+                                <li>Necessidade de dinheiro para comprar o material.</li>
+                                <li>Necessidade de trabalho voluntário.</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/doHnLiAzQ5M" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="contributors">
+            <div class="container">
+                <h2>Nossos Colaboradores</h2>
+                <p>Pessoas de espírito solidário juntos na nossa luta!</p>
+                <div id="org-members">
+                    <div class="loader">
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                    </div>
                 </div>
             </div>
         </div>
