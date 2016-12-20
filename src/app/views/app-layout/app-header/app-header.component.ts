@@ -1,7 +1,7 @@
 import {Component, OnInit, ViewChild, TemplateRef, OnDestroy} from '@angular/core';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {AngularFire, AuthProviders, AuthMethods, FirebaseAuthState} from 'angularfire2';
-import {User} from './user.interface.ts';
+import {User} from './user.interface';
 
 @Component({
     selector: 'app-header',

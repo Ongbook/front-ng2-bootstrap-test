@@ -5,7 +5,7 @@ function createMap(objId, lat, long) {
     map = new google.maps.Map(document.getElementById(objId), {
         center: { lat: lat, lng: long },
         scrollwheel: false,
-        zoom: 5
+        zoom: 4
     });
 
     createMarkers(map);

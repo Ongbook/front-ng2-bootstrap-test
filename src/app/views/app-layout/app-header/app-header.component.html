@@ -61,7 +61,7 @@
                                         </form>
                                     </div>
                                     <div class="bottom text-center">
-                                        Não tem uma conta ? <a href="javascript:void(0)" (click)="showregister()"><b>Crie uma!</b></a>
+                                        Não tem uma conta? <a href="javascript:void(0)" (click)="showregister()"><b>Crie uma!</b></a>
                                     </div>
                                 </div>
                             </li>
@@ -105,9 +105,10 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title">Cadastrar-se no Ongbook</h4>
+            <h3 class="modal-title">Cadastre sua Entidade Social</h3>
         </div>
         <div class="modal-body">
+            <h4>Dados do responsável</h4><br/>
             <div class="form-group">
                 <label for="name" class="control-label">Nome:</label>
                 <input type="text" class="form-control" name="name" id="name" required [ngModel]="user.name" minlength="5">
@@ -127,7 +128,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Cancelar</button>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
     </form>

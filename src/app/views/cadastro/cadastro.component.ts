@@ -1,6 +1,6 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 @Component({
-    selector: 'cadastro',
+    selector: 'cadastro-component',
     templateUrl: 'cadastro.component.html',
     styleUrls: ['cadastro.component.scss'],
 })
