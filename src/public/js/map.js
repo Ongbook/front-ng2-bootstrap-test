@@ -1,4 +1,5 @@
 ﻿var map;
+var markers = [];
 
 function createMap(objId, lat, long) {
     // Create a map object and specify the DOM element for display.
@@ -17,7 +18,8 @@ function createMarkers(map) {
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(val.lat, val.lng),
                 map: map,
-                title: val.descEnd
+                title: val.descEnd,
+                icon: '../img/map/marcador.png'
             });
 
             var infowindow = new google.maps.InfoWindow({
@@ -28,7 +30,13 @@ function createMarkers(map) {
             marker.addListener('click', function () {
                 infowindow.open(map, marker);
             });
+
+           markers.push(marker);
+
         });
+
+        var markerCluster = new MarkerClusterer(map, markers, {imagePath: '../img/map/m'});
+        
     });
 }
 
@@ -38,14 +46,14 @@ function mapGetStarted() {
 
     }
 
-    $("#overMap").animate({
+    $("#over-maps").animate({
         opacity: 0
     }, 500, function () {
-        $("#mapContainer").animate({
+        $("#map-container").animate({
             height: $(window).height()
         }, 500, function () {
-            $("#overMap").remove();
-            $("#mapTip").fadeIn();
+            $("#over-maps").remove();
+            $("#map-tip").fadeIn();
             resizeGoogleMap();
         });
     });
