@@ -46,13 +46,13 @@ function mapGetStarted() {
 
     }
 
-    $("#over-maps").animate({
+    $("#over-map").animate({
         opacity: 0
     }, 500, function () {
         $("#map-container").animate({
             height: $(window).height()
         }, 500, function () {
-            $("#over-maps").remove();
+            $("#over-map").remove();
             $("#map-tip").fadeIn();
             resizeGoogleMap();
         });
