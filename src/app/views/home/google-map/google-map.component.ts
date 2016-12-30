@@ -17,7 +17,7 @@ export class GoogleMapComponent implements OnInit, OnDestroy, AfterContentInit {
     }
 
     ngAfterContentInit() {
-        createMap('map', -22.9108558, -43.5884197);
+        createMap('map', -14.18650192, -51.89766873);
     }
 
     ngOnDestroy() {
@@ -27,5 +27,5 @@ export class GoogleMapComponent implements OnInit, OnDestroy, AfterContentInit {
 
 }
 
-// declaração da função escrita em javascript
+// declaracao da funcao escrita em javascript
 declare function createMap(id: any, lat: any, lng: any): void;

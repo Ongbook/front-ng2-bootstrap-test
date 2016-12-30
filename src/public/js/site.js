@@ -1,11 +1,11 @@
 ﻿window.addEventListener("load", function () {
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            anchors: ['mapa', 'queremos', 'parceiros'],
+            anchors: ['mapa', 'queremos', 'parceiros', 'contato'],
             afterRender: function () {
-                $('#mapContainer').height($(window).height());
+                $('#map-container').height($(window).height());
                 $('#map').height($(window).height());
-                $('#overMap').fadeIn();
+                $('#over-map').fadeIn();
                 resizeGoogleMap();
             }
         });

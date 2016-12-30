@@ -14,6 +14,3 @@ import './style/app.scss';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
 import 'font-awesome/css/font-awesome.min.css';
-
-
-

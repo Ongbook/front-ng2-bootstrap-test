@@ -1,51 +1,58 @@
-home{
-    width: 100%;
-    height: 100%;
-}
 p,h1 {
     color: white;
 }
-.overMap{
-    position: absolute; 
-    top: 0;
-    left:0;
-    bottom:0;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    z-index:10; 
-    width: 100%; 
-    height: 100%;
-    text-align:center;
-    color: white;
-    text-shadow: 2px 2px 10px black;
-    background: rgba(0, 0, 0, 0.2);
-}
-.overMap .container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
-}
 
-.mapTip{
-    position: absolute; 
-    top:40px; 
-    right: 0px;
-    z-index: 20;
-    display: none;
+// Sessao #mapa
+#section0{
+
+    #map-tip{
+        position: absolute; 
+        top:40px; 
+        right: 0px;
+        z-index: 20;
+        display: none;
+    }
+
+    .over-map{
+        position: absolute;
+        width: 100%; 
+        height: 100%;
+        color: white;
+        top: 0;
+        left:0;
+        bottom:0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        z-index:10; 
+        text-align:center;
+        text-shadow: 2px 2px 10px black;
+        background: rgba(0, 0, 0, 0.2);
+        display: none;
+
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            h1{
+                font-size: 5em;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                font-weight: 600;
+            }
+            
+            h2{
+                font-size: 2em;
+                max-width: 600px;
+                margin: 0px auto;
+                padding-bottom: 40px;
+            }
+        }
+    }
 }
-.overMap h1{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 5em;
-    font-weight: 600;
-}
-.overMap h2{
-    font-size: 2em;
-    max-width: 600px;
-    margin: 0px auto;
-    padding-bottom: 40px;
-}
+// End: Sessao #mapa
+
 .fgWhite{
     color:white;
 }
@@ -53,9 +60,6 @@ p,h1 {
     background-color: #2d4052;
 }
 
-.padding50{
-    padding: 50px;
-}
 .contributors{
     background-color: rgba(241,156,20,0.8);
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQAKvH/D9Z4TxQRxRhU+MYAEYB8RmROaABADVjA7dZF1Q+AAAAABJRU5ErkJggg==);
@@ -79,6 +83,57 @@ p,h1 {
     color: white;
     text-shadow: 2px 2px 10px black;
 }
-.parallax-window {
-    background: transparent;
+
+
+section #section3{
+    text-align: center;
+    font-size: 0.8em;
+    color:white;
+}
+
+.footer-top{
+    background-color: #16222d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align:left;
+}
+
+.footer-top i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-top i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-top p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-top p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-top p a{
+	color:  #5383d3;
+	text-decoration: none;
+}
+.footer-top .fmap{
+    margin-top: 70px;
 }
