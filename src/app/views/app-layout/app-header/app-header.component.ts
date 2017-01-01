@@ -30,14 +30,14 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
         });
     }
 
-    fblogin() {
+    fbLogin() {
         this.af.auth.login({
             provider: AuthProviders.Facebook,
             method: AuthMethods.Popup
         });
     }
 
-    printuserinfo() {
+    printUserInfo() {
         let user = this.af.auth.getAuth().facebook;
         if (user != null) {
             console.log(user);
@@ -48,7 +48,7 @@ export class AppHeaderComponent implements OnInit, OnDestroy {
         this.af.auth.logout();
     }
 
-    showregister() {
+    showRegister() {
         this.modalService.open(this.registerDialog).result.then((result) => {
             // closed button pressed
             console.log(`Closed with: ${result}`);

@@ -14,13 +14,13 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li data-menuanchor="queremos"><a href="#queremos">Atua em alguma ONG?</a></li>
-                    <li data-menuanchor="parceiros"><a href="#parceiros">Parceiros?</a></li>                    
-                    <li><a href="#">O que é</a></li>
-                    <li data-menuanchor="parceiros"><a href="#parceiros">Apoie</a></li>
+                    <li data-menuanchor="parceiros"><a href="#parceiros">Parceiros</a></li>
+                    <li data-menuanchor="responsavel"><a href="#responsavel">Atua em alguma ONG?</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
+                    <li data-menuanchor="quremosefazemos"><a href="#queremosefazemos">O que</a></li>
+                    <li data-menuanchor="apoie"><a href="#apoie">Apoie</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                             <div *ngIf="!authState">
@@ -39,8 +39,8 @@
                                     <div class="col-md-12">
                                         Entrar utilizando
                                         <div class="social-buttons">
-                                            <a (click)="fblogin()" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                            <a (click)="printuserinfo()" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            <a (click)="fbLogin()" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a (click)="printUserInfo()" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                         </div>
                                         ou
                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
@@ -61,7 +61,7 @@
                                         </form>
                                     </div>
                                     <div class="bottom text-center">
-                                        Não tem uma conta? <a href="javascript:void(0)" (click)="showregister()"><b>Crie uma!</b></a>
+                                        Não tem uma conta? <a href="javascript:void(0)" (click)="showRegister()"><b>Crie uma!</b></a>
                                     </div>
                                 </div>
                             </li>
@@ -110,19 +110,19 @@
         <div class="modal-body">
             <h4>Dados do responsável</h4><br/>
             <div class="form-group">
-                <label for="name" class="control-label">Nome:</label>
+                <label for="name" class="control-label">Nome</label>
                 <input type="text" class="form-control" name="name" id="name" required [ngModel]="user.name" minlength="5">
             </div>
             <div class="form-group">
-                <label for="email" class="control-label">Email:</label>
+                <label for="email" class="control-label">Email</label>
                 <input type="email" class="form-control" name="email" id="email" required [ngModel]="user.email">
             </div>
             <div class="form-group">
-                <label for="password" class="control-label">Senha:</label>
+                <label for="password" class="control-label">Senha</label>
                 <input type="password" class="form-control" id="password" name="password" required [ngModel]="user.password" #password="ngModel" minlength="8" reverse="true">
             </div>
             <div class="form-group">
-                <label for="confirmPassword" class="control-label">Repetir Senha:</label>
+                <label for="confirmPassword" class="control-label">Repetir Senha</label>
                 <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" [ngModel]="user.confirmPassword" 
                     required validateEqual="password" #confirmPassword="ngModel">
             </div>

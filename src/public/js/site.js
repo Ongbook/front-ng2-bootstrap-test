@@ -1,19 +1,18 @@
 ﻿window.addEventListener("load", function () {
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            anchors: ['mapa', 'queremos', 'parceiros', 'contato'],
+            anchors: ['mapa', 'queremosefazemos', 'apoie', 'parceiros', 'contato'],
             afterRender: function () {
                 $('#map-container').height($(window).height());
                 $('#map').height($(window).height());
                 $('#over-map').fadeIn();
+                $('.fa-play-circle-o').fadeIn();
                 resizeGoogleMap();
             }
         });
     });
 
-    
-
-    //github
+    // github
     var orgMembers = GhOrgMembers({
         container: "#org-members"
         , userTempl: "<div class='user'>"
