@@ -35,7 +35,7 @@
                 <h2>Metas</h2>
                 <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-body">
+                        <div class="panel-body panel-queremos">
                             <h3>Para as Entidades Sociais</h3>
                             <ul>
                                 <li>Dar visibilidade aos seus projetos sociais</li>
@@ -55,7 +55,7 @@
 
                 <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-body">
+                        <div class="panel-body panel-queremos">
                             <h3>Para os usuários com perfil Solidário</h3>
                             <ul>
                                 <li>Informações categorizadas de atividades sociais</li>
@@ -63,11 +63,9 @@
                                 <li>Receber notificações nas redes sociais de atividades sociais com o seu perfil</li>
                                 <li>Contribuir para melhoria da aplicação, caso seja desenvolvedor</li>
                             </ul>
-                            <br><br>
                         </div>
                     </div>
                 </div>
-                <br>
                 <blockquote class="pull-right">
                     <h5>"O que conta não é o quanto você tem, e sim, o quanto você contribui".</h5>
                     <small>Peter Drucker em <cite title="Drucker Institute"><a href="http://www.druckerinstitute.com/drucker-nonprofit-innovation-award/" target="_blank">NONPROFIT</a></cite>. <a href="http://migre.me/mRmc2" target="_blank">Slide</a></small>
@@ -78,6 +76,51 @@
     </section>
 
     <section class="section" id="section2">
+        <div class="container">
+            <h1>Apoie</h1>
+            <h3>Ajude-nos a ajudar.</h3>
+
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Curta, compartilhe! Avise seus amigos.</p><br>
+                        <img class="icons-apoie" src="../img/apoie/viral.png" alt="Viralize essa idéia com todos!"><br>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="btn btn-warning btn-lg btn-block" href="javascript:void(0)" (click)="showModalDivulgue()">Divulgue</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Seja nosso Parceiro!</p><br>
+                        <img class="icons-apoie" src="../img/apoie/financie.png" alt="Acredite nessa idéia com todos seu coração!"><br>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="btn btn-warning btn-lg btn-block" href="javascript:void(0)" (click)="showModalFomente()">Fomente</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Participe da evolução desta ferramenta.</p><br>
+                        <img class="icons-apoie" src="../img/apoie/desenvolva.png" alt="Construa algo do bem, que seja à vera, sempre!"><br>
+                    </div>
+                    <div class="panel-footer">
+                        <a class="btn btn-warning btn-lg btn-block" href="javascript:void(0)" (click)="showModalDesenvolva()">Desenvolva conosco</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="section3">
         <div class="contributors">
             <div class="container">
                 <h2>Nossos Colaboradores</h2>
@@ -93,7 +136,7 @@
             </div>
         </div>
     </section>
-    <section class="section fp-auto-height" id="section3">
+    <section class="section fp-auto-height" id="section4">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -138,3 +181,89 @@
     </section>
 
 </div>
+<!-- End: #fullPage -->
+
+<!-- Modais -->
+<!-- Divulgue -->
+<template #divulgue let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Divulgue</h3>
+    </div>
+    <div class="modal-body">
+        <iframe id="like-box-face" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fequipea3&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1877935842437516" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <div class="jumbotron">
+            <div class="col-lg-3">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fongbook.org&width=95&layout=box_count&action=recommend&size=small&show_faces=false&share=false&height=65&appId=1877935842437516" width="95" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'pt-BR'}</script>   
+                <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60" data-href="http://ongbook.org"></div>
+            </div>
+            <div class="col-lg-3">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.ongbook.org" data-text="Catálogo de Entidades Sociais com as causas mais nobres do Planeta!" data-via="_Ongbook" data-size="large" data-related="edoura" data-hashtags="ongbook">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+            <div class="col-lg-3">
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: pt_BR</script>
+                <script type="IN/Share" data-url="http://ongbook.org" data-counter="top"></script>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Fomente -->
+<template #fomente let-c="close" let-d="dismiss">
+    <form class="form">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">Como gostaria de contribuir?</h3>
+        </div>
+        <div class="modal-body">
+            <p>Independente de quem seja e da área que atue, sua participação é fundamental.</p><br>
+            <div class="form-group">
+                <label for="nome-parceiro" class="control-label">Nome</label>
+                <input type="text" class="form-control" id="nome-parceiro">
+            </div>
+            <div class="form-group">
+                <label for="email-parceiro" class="control-label">Email</label>
+                <input type="email" class="form-control" id="email-parceiro">
+            </div>
+            <div class="form-group">
+                <label for="assunto-parceiro" class="control-label">Assunto</label>
+                <input type="text" class="form-control" id="assunto-parceiro">
+            </div>
+            <div class="form-group">
+                <label for="msg-parceiro" class="control-label">Mensagem</label>
+                <textarea class="form-control" rows="3" id="msg-parceiro"></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Depois</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+</template>
+
+<!-- Desenvolva -->
+<template #desenvolva let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Desenvolva conosco</h3>
+    </div>
+    <div class="modal-body">
+        <img class="img-modal-apoie" src="../img/apoie/git.png" alt="Octocat Github">
+        <blockquote>
+            <p><em>Projetos open source são o que há de mais legal no mundo do desenvolvimento quando se quer aprender novas tecnologias e envolver-se em projetos, seja codificando, documentando, testando ou realizando qualquer tipo de atividade que envolve um projeto.</em></p>
+            <small>Willian Martins em <cite title="Tableless"><a href="http://tableless.com.br/contribuindo-em-projetos-open-source-com-o-github/" target="_blank">Primeiros passos</a>.</cite></small>
+        </blockquote>
+    </div>
+    <div class="modal-footer">
+        <a class="btn btn-primary" href="http://github.com/Ongbook" target="_blank">Repositórios Ongbook</a>
+    </div>
+</template>

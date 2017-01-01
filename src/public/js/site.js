@@ -1,7 +1,7 @@
 ﻿window.addEventListener("load", function () {
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            anchors: ['mapa', 'queremos', 'parceiros', 'contato'],
+            anchors: ['mapa', 'queremosefazemos', 'apoie', 'parceiros', 'contato'],
             afterRender: function () {
                 $('#map-container').height($(window).height());
                 $('#map').height($(window).height());
@@ -12,9 +12,7 @@
         });
     });
 
-    
-
-    //github
+    // github
     var orgMembers = GhOrgMembers({
         container: "#org-members"
         , userTempl: "<div class='user'>"

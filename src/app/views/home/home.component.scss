@@ -1,6 +1,5 @@
 // Sessao #mapa
 #section0{
-
     #map-tip{
         position: absolute;
         top:40px;
@@ -56,22 +55,27 @@
 // Sessao #queremosefazemos
 #section1{
     h1 {
-        margin-bottom: 22px;
+        margin-bottom: 2%;
     }
     h4{
         line-height: 1.5em;
     }
     h2{
-        margin-bottom: 2%;
+        margin-bottom: 3%;
     }
     h3{
         margin-bottom: 4%;
     }
 
+    .panel-queremos{
+        min-height: 230px;
+        height: 100%;
+    }
+
     ul{
         text-align: left;
     }
-
+    
     .fa-play-circle-o{
         position: absolute;
         color: #2d4052;
@@ -86,6 +90,23 @@
     }
 }
 // End: Sessao #queremosefazemos
+
+// Sessao #apoie
+#section2{
+    h1 {
+        margin-bottom: 2%;
+    }
+    h3{
+        margin-bottom: 7%;
+    }
+    .icons-apoie{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+}
+// End: Sessao #apoie
 
 
 .contributors{
@@ -164,4 +185,19 @@ section #section3{
 }
 .footer-top .fmap{
     margin-top: 70px;
+}
+
+
+// templates modais
+.img-modal-apoie{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#like-box-face{
+    width: 100%;
+    height: 214px;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
 }
